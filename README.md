@@ -1,6 +1,6 @@
 # loan-management-system
 
-Description
+## Description
 Enterprise Loan Management System (ELMS) is an open-source, enterprise-grade application that manages the full lifecycle of bank loans — from application submission to approval, tracking, and reporting.The Loan Management System is a microservices-based platform that automates the end-to-end loan lifecycle, including application submission, credit evaluation, approval workflow, and loan disbursement. The system uses an API Gateway architecture with secure authentication through Keycloak and supports scalable, cloud-native deployment. Built using Java Spring Boot, ELMS follows DevOps, CI/CD, containerization, and cloud orchestration best practices, ensuring secure, scalable, and maintainable banking operations.
 
 ##### ⚡ Key Features
