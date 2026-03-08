@@ -6,11 +6,17 @@ plugins {
 
 group = "com.companydomain"
 version = "0.0.1-SNAPSHOT"
-description = "api-gateway"
+description = "loan-service"
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom(configurations.annotationProcessor.get())
     }
 }
 
@@ -19,9 +25,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    testImplementation("org.springframework.boot:spring-boot-starter-webflux-test")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.springframework.boot:spring-boot-starter-webmvc")
+
 }
 
 tasks.withType<Test> {
