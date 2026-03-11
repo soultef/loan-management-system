@@ -7,4 +7,8 @@
  */
 
 rootProject.name = "loan-management-system"
+include("api-gateway")
+
+project(":api-gateway").projectDir = file("services/api-gateway")
+
 

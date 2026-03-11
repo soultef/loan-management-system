@@ -5,3 +5,21 @@
  * Learn more about Gradle by exploring our Samples at https://docs.gradle.org/9.3.0/samples
  * This project uses @Incubating APIs which are subject to change.
  */
+plugins {
+    id("org.springframework.boot") version "3.2.5" apply false
+    id("io.spring.dependency-management") version "1.1.4" apply false
+}
+
+allprojects {
+    group = "com.company.loan"
+    version = "1.0.0"
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply(plugin = "io.spring.dependency-management")
+
+}
